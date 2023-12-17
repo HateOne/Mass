@@ -62,8 +62,8 @@ public class CalcService {
 
         int moth = 0;
         int avarageSales = averageAmountOfSales(sales);
-        for ( int i =0; i < sales.length; i++){
-            if (sales[i] < averageAmountOfSales(sales)){
+        for (int i = 0; i < sales.length; i++) {
+            if (sales[i] < averageAmountOfSales(sales)) {
                 moth++;
             }
 
@@ -71,20 +71,21 @@ public class CalcService {
         return moth;
 
 
-
     }
+
     public int msxAverageAmountOfSales(int[] sales) {
 
         int moth = 0;
         int avarageSales = averageAmountOfSales(sales);
-        for ( int i =0; i < sales.length; i++){
-            if (sales[i] > averageAmountOfSales(sales)){
+        for (int i = 0; i < sales.length; i++) {
+            if (sales[i] > averageAmountOfSales(sales)) {
                 moth++;
             }
 
         }
-        return moth ;
-}}
+        return moth;
+    }
+}
 
 
 
